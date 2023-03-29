@@ -10,7 +10,7 @@ module.exports = function(sequelize, DataTypes) {
     Codigo: {
       type: DataTypes.BIGINT,
       allowNull: false,
-      unique: "Unique_Codigo"
+      unique: "UNIQUE_Codigo"
     },
     Descripcion: {
       type: DataTypes.STRING(250),
@@ -34,7 +34,7 @@ module.exports = function(sequelize, DataTypes) {
         ]
       },
       {
-        name: "Unique_Codigo",
+        name: "UNIQUE_Codigo",
         unique: true,
         using: "BTREE",
         fields: [
